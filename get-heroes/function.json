@@ -1,5 +1,4 @@
 {
-  "disabled": false,
   "bindings": [
     {
       "authLevel": "function",
@@ -11,6 +10,15 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "heroesdb",
+      "databaseName": "admin",
+      "collectionName": "heroes",
+      "connection": "my-cosmos-heroed_DOCUMENTDB",
+      "direction": "in"
     }
-  ]
+  ],
+  "disabled": false
 }
